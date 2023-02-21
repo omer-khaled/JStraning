@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #efedd6;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 40%;
+  min-height: 100vh;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container h1 {
+  font-size: 1.7rem;
+  text-align: center;
+}
+.container .box {
+  margin-top: 20px;
+  background: steelblue;
+  width: 70%;
+  height: 25vh;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 5px 0 #000;
+}
+.container .box h2 {
+  font-size: 1.7rem;
+  text-align: center;
+  color: white;
+}/*# sourceMappingURL=style.css.map */

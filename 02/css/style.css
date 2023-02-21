@@ -1,0 +1,71 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  position: absolute;
+  width: 100%;
+  height: 85vh;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container .row {
+  width: 200px;
+  height: 3px;
+  background: #e0e0e0;
+  margin-bottom: 2%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: -1;
+}
+.container .row .before_element {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0;
+  background: #3498db;
+  z-index: 1;
+  transition: 0.7s width;
+}
+.container .row .child {
+  z-index: 2;
+  background: white;
+  border-radius: 50%;
+  padding: 2px 4px;
+  font-size: 11px;
+  color: black;
+  border: 2px solid #e0e0e0;
+  cursor: pointer;
+}
+.container .row .active_child {
+  transition: 1.7s border;
+  border: 2px solid #3498db;
+}
+.container .buttons {
+  margin-top: 2%;
+}
+.container .buttons button {
+  border: none;
+  outline: none;
+  font-size: 10px;
+  padding: 5px 17px;
+  border-radius: 3px;
+  background: #e0e0e0;
+  color: white;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.container .buttons .active {
+  background: #3498db;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,40 @@
+body{
+    background-color: #2b88f0;
+    font-family: 'Muli', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.conteiner{
+    width:50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+h3{
+    color: white;
+    text-align: center;
+    width: 70%;
+}
+textarea{
+    width: 100%;
+    height: 100px;
+    margin-bottom:20px;
+}
+.row{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+span{
+    font-size: 17px;
+    padding:5px 20px;
+    background: #f0932b;
+    border-radius: 10px;
+    color: white;
+    margin-right: 10px;
+}

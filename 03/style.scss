@@ -1,0 +1,150 @@
+$nagation_color:#ff7979;
+body{
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.cover{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100vw;
+    height: 160vh;
+    overflow: hidden;
+    position: relative;
+    .all_befor{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        background: #333;
+        position:absolute;
+    }
+    .all{
+        overflow: hidden;
+        transform-origin: top left;
+        // transform: rotate(-22deg);
+        position:absolute;
+        background: white;
+        width:100%;
+        height:100%;
+        transition: 0.8s all;
+        .container{
+            width: 70%;
+            margin: auto;
+            .Heading{
+                position: relative;
+                font-size: 20px;
+                font-weight: 400;
+                &::before{
+                    content: "Florin Pop";
+                    position: absolute;
+                    left: 0;
+                    bottom: -10px;
+                    font-size: 10px;
+                    font-weight: 300;
+                }
+            }
+            h4{
+                font-size: 15px;
+                font-weight: 400;
+            }
+            p{
+                font-size: 11px;
+            }
+            img{
+                width: 100%;
+                height:90vh;
+            }
+        }
+    }
+
+}
+.navigation{
+    position: fixed;
+    left: -70px;
+    top: -70px;
+    width: 120px;
+    height: 120px;
+    background-color: $nagation_color;
+    border-radius: 50%;
+    box-sizing: border-box;
+    padding-right: 6%;
+    padding-top: 14%;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    transition: 0.7s all;
+    cursor: pointer;
+    z-index: 1000;
+    // transform: rotate(-70deg);
+    .open{
+        position: absolute;
+        top: 65%;
+        left: 65%;
+        font-size: 20px;
+        color: white;
+        font-weight: bold;
+    }
+    .close{
+        position: absolute;
+        top: 70%;
+        left: 27%;
+        font-size: 20px;
+        color: white;
+        font-weight: bold;
+    }  
+}
+.side{
+    position: fixed;
+    left: -100px;
+    bottom: 30px;
+    transition: 0.7s all;
+    ul{
+        list-style: none;
+        padding: 0;
+        li{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            font-size: 12px;
+            color: white;
+            i{
+                font-size: 15px;
+                margin-right:5px;
+            }
+        }
+        li:nth-child(1){
+            margin-left: -px;
+        }
+        li:nth-child(2){
+            margin-left: 15px;
+            margin-top: 20px;
+        }
+        li:nth-child(3){
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+    }
+}
+.animated{
+    animation-name: anim;
+    animation-delay: 0.2s;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+@keyframes anim {
+    0%{
+        left: -100px;
+    }
+    100%{
+        left: 15px;
+    }
+}

@@ -1,0 +1,35 @@
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #e1e1e1;
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.none{
+    border: 1px solid #999;
+    background-color: #eee;
+    padding: 10px;
+    display: none;
+}
+.block{
+    border: 1px solid #999;
+    background-color: #eee;
+    width: 100px;
+    height: 40px;
+    margin-right: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+p{
+    position: absolute;
+    left: 50%;
+    margin: auto;
+    top:-20px;
+    font-size: 10px;
+    transform: translateX(-50%);
+}

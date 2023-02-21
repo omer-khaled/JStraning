@@ -1,0 +1,85 @@
+body{
+    background: steelblue;
+}
+form{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(42 78 108);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 45vh;
+    padding: 30px 15px;
+    border-radius: 0.3rem;
+}
+h2{
+    color: white;
+}
+input{
+    width: 90%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 2px solid white;
+    margin-bottom: 20px;
+    transition: 0.4s all;
+    transition-timing-function: ease-in-out;
+    padding: 0 4px;
+}
+.btn{
+    width: 90%;
+    outline: none;
+    transition-timing-function: ease-in-out;
+    background-color:lightblue;
+    border: none;
+    padding: 8px 0;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    font-size: 10px;
+}
+.controler{
+    width: 100%;
+    position: relative;
+}
+.controler label {
+    color: white;
+    position: absolute;
+    left: 4px;
+    font-size: 12px;
+}
+.controler label span{
+    transition: 0.3s all;
+    display: inline-block;
+}
+input{
+    color: white;
+}
+p{
+    font-size: 12px;
+    width: 90%;
+    color: white;
+}
+a{
+    display: inline;
+    text-decoration: none;
+    color: lightblue;
+}
+.animated{
+    animation-name: anim;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+@keyframes anim {
+    0%{
+        transform : scale(0.97);
+    }
+    100%{
+        transform : scale(1);
+    }
+}
